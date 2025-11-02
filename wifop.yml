@@ -1,4 +1,4 @@
-name: wifop-ml
+name: wifop
 channels:
   - conda-forge
   - apple
@@ -7,9 +7,10 @@ channels:
   - defaults
 dependencies:
   - python=3.12
-  - ipykernel
-  - scikit-learn
+  - tensorflow
   - matplotlib
   - seaborn
+  - ipykernel
+  - scikit-learn
   - xgboost
 
