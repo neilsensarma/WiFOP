@@ -30,3 +30,14 @@ The following command is helpful in the event that we install more tools in the 
 ```
 conda env update --name <environment_name> --file environment.yml --prune
 ```
+
+### Datasets:
+
+  - NASA POWER:
+      - T2M: Temperature 2 Meters
+      - RH2M: Relative Humidity 2 Meters
+      - PRECTOT: Total Precipitation
+      - WS10M: Wind Speeds 10 Meters
+      - LAT: Latitude
+      - LON: Longitude
+      - DATE: Date of collection
