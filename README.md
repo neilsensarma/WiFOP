@@ -34,10 +34,10 @@ conda env update --name <environment_name> --file environment.yml --prune
 ### Datasets:
 
   - NASA POWER:
-      - T2M: Temperature 2 Meters
-      - RH2M: Relative Humidity 2 Meters
-      - PRECTOT: Total Precipitation
-      - WS10M: Wind Speeds 10 Meters
+      - T2M: Temperature 2 Meters (°C), daily mean
+      - RH2M: 2-meter Relative Humidity, daily mean
+      - PRECTOT: Total Precipitation, daily total
+      - WS10M: 10-meter Wind Speeds (m/s), daily mean
       - LAT: Latitude
       - LON: Longitude
       - DATE: Date of collection
