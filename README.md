@@ -33,7 +33,7 @@ conda env update --name <environment_name> --file environment.yml --prune
 
 ### Datasets:
 
-  - NASA POWER:
+  - NASA POWER: Source - https://power.larc.nasa.gov/api/temporal/daily/regional
       - T2M: Temperature 2 Meters (°C), daily mean
       - RH2M: 2-meter Relative Humidity, daily mean
       - PRECTOT: Total Precipitation, daily total
@@ -41,3 +41,8 @@ conda env update --name <environment_name> --file environment.yml --prune
       - LAT: Latitude
       - LON: Longitude
       - DATE: Date of collection
+   
+      - Cleaning steps:
+          - unified the data by concatenating all the datasets for each of the factors.
+          - changed the date to be the standard date format
+          - total of 10k cells.
