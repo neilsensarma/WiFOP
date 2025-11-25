@@ -1,0 +1,38 @@
+[paths]
+labels : C:\Users\noais\PycharmProjects\firelable create\fire label data\data\final\labels_CA_2023-7_9.csv
+lookup : C:\Users\noais\PycharmProjects\firelable create\fire label data\data\final\grid_lookup_CA_5km.csv
+irwin  : C:\Users\noais\PycharmProjects\firelable create\fire label data\data\interim\fires\cleaned_irwin_CA_2023-7_9.csv
+events : C:\Users\noais\PycharmProjects\firelable create\fire label data\data\interim\labels\events_on_grid_CA_2023-7_9.csv
+
+[shape]
+lookup grids unique : 16901
+labels rows         : 1554892
+expected rows       : 1554892 (= 92 days × 16901 grids)
+
+[columns]
+labels columns = ['date', 'grid_id', 'fire_today']
+labels missing columns: set()
+
+[basic QA]
+bad_date rows: 0
+bad fire_today (not in {0,1}): 0
+grid_id not in lookup: 0
+
+[positives]
+positives: 4856
+pos rate : 4856 / 1554892 = 0.312305%
+daily pos rate csv: C:\Users\noais\PycharmProjects\firelable create\fire label data\data\interim\qa\labels_pos_rate_by_day.csv
+
+[IRWIN overview]
+rows: 5557
+date_col: date
+lat_col: lat
+lon_col: lon
+date_min: 2023-07-01 00:00:00
+date_max: 2023-10-01 00:00:00
+type_counts: {'WF': 5557}
+state_counts: {'US-CA': 5557}
+
+[events_on_grid cross-check]
+labels==1 not found in events_on_grid: 0
+
