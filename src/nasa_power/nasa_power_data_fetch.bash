@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir -p power_ca_jul_sep2023 && cd power_ca_jul_sep2023
 
 base='https://power.larc.nasa.gov/api/temporal/daily/regional'
