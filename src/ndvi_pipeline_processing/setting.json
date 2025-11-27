@@ -1,0 +1,39 @@
+{
+  "time_period": {
+    "start_date": "2023-07-01",
+    "end_date": "2023-09-30"
+  },
+
+  "spatial_extent": {
+    "min_longitude": -125.0,
+    "max_longitude": -113.0,
+    "min_latitude": 32.0,
+    "max_latitude": 42.5
+  },
+
+  "grid": {
+    "resolution_km": 5,
+    "crs_latlon": "EPSG:4326",
+    "crs_projected": "EPSG:3310"
+  },
+  "format": {
+    "date": "%Y-%m-%d"
+  },
+  "input_files": {
+    "irwin": "../data/raw/irwin_2023-07.csv",
+    "firms": "../data/raw/firms_2023-07.csv",
+    "ndvi": "../data/raw/ndvi.csv",
+    "nasa_power": "../data/raw/NASA_POWER.csv",
+    "elevation": "../data/raw/elev_1km_ca_with_slope_aspect.csv",
+    "nlcd": "../data/raw/nlcd_1km_CA_composition_2023.csv",
+    "ca_geojson": "data/raw/ca.geojson"
+  },
+
+  "firms_processing": {
+    "min_confidence": ["nominal", "high"]
+  },
+
+  "irwin_processing": {
+    "drop_duplicates": true
+  }
+}
