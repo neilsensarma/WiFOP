@@ -1,6 +1,6 @@
 # WiFOP
 
-WiFOP - Wildfire Outbreak Prediction dashboard.
+WiFOP - Wildfire Outbreak Prediction.
 
 ### Installing the environments:
 
